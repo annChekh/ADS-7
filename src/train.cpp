@@ -25,7 +25,6 @@ int Train::getLength() {
         first->light = true;
     }
     int distance = 0;
-    
     while (true) {
         current_car = current_car->next;
         countOp++;
@@ -39,7 +38,6 @@ int Train::getLength() {
             if (current_car == first && !current_car->light) {
                 break;
             }
-            
             distance = 0;
         }
     }
